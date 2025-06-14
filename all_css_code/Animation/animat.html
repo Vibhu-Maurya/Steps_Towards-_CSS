@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+  <style>
+     .box{
+         height: 100px;
+         width: 100px;
+         border: 3px solid black;
+         background-color: brown;
+         border-radius: 5px;
+         position: relative;
+         top: 10px ;
+         left:10px;
+         
+         animation-name: chal;
+         animation-duration: 2s;
+         animation-timing-function: ease-in-out;
+         animation-delay: 1s;
+         animation-iteration-count: infinite;
+         animation-direction: alternate-reverse;
+     }
+     @keyframes chal{
+          0%{ left: 10px;}
+          40%{left: 990px;}
+          89%{right: 875px;}
+     }
+     
+  </style>
+</head>
+<body>
+  <div class="box">Animate</div>
+</body>
+</html>
